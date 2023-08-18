@@ -11,7 +11,7 @@ export default class BookController extends BaseController{
         }
 
         saveBook(req:Request, res:Response<any>){
-            console.log("check request: "+JSON.stringify(req.query));
+          
             const newBook = new BookController().saveData(req, res, BookModel);
             return res.status(201).send(newBook);
         }

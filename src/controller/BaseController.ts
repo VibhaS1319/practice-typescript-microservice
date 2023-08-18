@@ -17,7 +17,6 @@ export default class BaseController{
      saveData(req: Request, res: Response<any>, model:any){
 
         const data = new baseService().saveData(model, req.body);
-        console.log("check data: "+JSON.stringify(data));
         return data;
      }
 }
